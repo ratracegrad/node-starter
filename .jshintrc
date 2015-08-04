@@ -1,0 +1,18 @@
+{
+	"passfail": false,
+	"bitwise": true,
+	"curly": true,
+	"devel": true,
+	"eqeqeq": true,
+	"forin": true,
+	"freeze": true,
+	"maxdepth": 3,
+	"nonew": true,
+	"strict": true,
+	"undef": true,
+	"unused": true,
+	"loopfunc": true,
+	"browser": true,
+	"node": true,
+	"predef": []
+}
