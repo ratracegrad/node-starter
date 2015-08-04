@@ -1,0 +1,24 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "A starter template for gigsters making NodeJS apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No Tests Specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigster-eng/node-starter.git"
+  },
+  "author": "",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/gigster-eng/node-starter/issues"
+  },
+  "homepage": "https://github.com/gigster-eng/node-starter#readme",
+  "private": true,
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.3"
+  }
+}
