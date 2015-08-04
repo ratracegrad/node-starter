@@ -1,0 +1,20 @@
+{
+  "name": "node-starter",
+  "main": "index.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gigster-eng/node-starter",
+  "authors": [
+    "\"\""
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
