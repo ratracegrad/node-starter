@@ -4,7 +4,7 @@
   "description": "A starter template for gigsters making NodeJS apps",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "echo \"No Tests Specified\""
   },
   "repository": {

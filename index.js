@@ -2,7 +2,7 @@
 var express = require('express');
 var cors = require('cors');
 
-var app = express();
+var app = express().use(cors());
 
 //###############################################
 
@@ -31,5 +31,6 @@ app.get('/', function(req, res) {
 
 var port = (process.env.PORT || 5000);
 app.set('port', port);
-app.listen(app.get('port'));
-console.log('Listening on port:' + port + '...');
+app.listen(app.get('port'), function() {
+  console.log('Listening on port:' + port + '...');
+});
