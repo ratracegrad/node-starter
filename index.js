@@ -25,4 +25,4 @@ app.get('/', function(req, res) {
 var port = (process.env.PORT || 5000);
 app.set('port', port);
 app.listen(app.get('port'));
-console.log('Listening on port:' + port);
+console.log('Listening on port:' + port + '...');
