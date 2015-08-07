@@ -1,18 +1,18 @@
 {
-	"passfail": false,
 	"bitwise": true,
+	"browser": true,
 	"curly": true,
 	"devel": true,
 	"eqeqeq": true,
 	"forin": true,
 	"freeze": true,
+	"loopfunc": true,
 	"maxdepth": 3,
+	"node": true,
 	"nonew": true,
+	"passfail": false,
+	"predef": [],
 	"strict": true,
 	"undef": true,
-	"unused": true,
-	"loopfunc": true,
-	"browser": true,
-	"node": true,
-	"predef": []
+	"unused": true
 }
