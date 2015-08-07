@@ -19,6 +19,7 @@
   "homepage": "https://github.com/gigster-eng/node-starter#readme",
   "private": true,
   "dependencies": {
+    "cors": "^2.7.1",
     "ejs": "^2.3.3",
     "express": "^4.13.3"
   },
