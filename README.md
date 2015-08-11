@@ -5,7 +5,5 @@ A basic NodeJS starter template. This template is designed to give any NodeJS pr
 Here is a list of some of those features:
 
     1. CORS (Cross Origin Request Policy)
-    2. Authentication
-    3. Build Automation via Gulp/Grunt
-    4. Multiple Configurable DB Services at start (one should be selected)
-    5. ...
+    2. Winston for Smart Server Logging
+    3. ...and more!
