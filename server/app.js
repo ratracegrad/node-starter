@@ -1,37 +1,27 @@
-// Required Modules
+'use strict';
+
+// Set default node environment to development
+// HINT: Change this if you would like to set it to `production` or so
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 var cors = require('cors');
 var express = require('express');
-var cfg = require('./config');
+var cfg = require('./config/environment');
 
+
+// Setup Server
 var app = express().use(cors());
-
-//###############################################
-//############## Route Handler ##################
-//###############################################
-
-
-//###############################################
-//############### View Engine ###################
-//###############################################
-
-// Setup to use HTML for Views
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
-
-//###############################################
-
-// Home Page
-app.get('/', function(req, res) {
-	res.render('index.html');
-});
+var server = require('http').createServer(app);
+require('./config/express')(app);
+require('./routes')(app);
 
 //###############################################
 //################ Run Server ###################
 //###############################################
 
-var port = (process.env.PORT || 5000);
-app.set('port', port);
-app.listen(app.get('port'), function() {
-  global.winston.log('info', 'Listening on port:'+port+'...');
+server.listen(cfg.port, cfg.ip, function() {
+  global.winston.log('info', 'Node Server listening on %d, in %s mode', cfg.port, app.get('env'));
 });
+
+// Expose app
+exports = module.exports = app;

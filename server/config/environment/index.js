@@ -2,16 +2,22 @@ module.exports = (function() {
   'use strict';
 
   var path = require('path');
+  var _ = require('lodash');
 
-  var cfg = {};
-
-  cfg.appLogName = 'WinstonLog.log';
-  cfg.logFileMaxSize = 20000;
-  cfg.logsDirectory = 'logs';
-  cfg.rollingDatePattern = '.yyyy-MM-dd';
+  var cfg = {
+    appLogName: 'WinstonLog.log',
+    logFileMaxSize: 20000,
+    // Relative from root
+    logsDirectory: 'server/logs',
+    root: path.normalize(__dirname + '/../../..'),
+    rollingDatePattern: '.yyyy-MM-dd',
+    port: process.env.PORT || 8888,
+    env: process.env.NODE_ENV,
+    secrets: {},
+  };
 
   //##############################################
-  //############## Global Vars ###################
+  //################## Logging ###################
   //##############################################
 
   // Global Logging by Date on run()
@@ -21,7 +27,7 @@ module.exports = (function() {
     transports: [
       new (winston.transports.DailyRotateFile)({
         datePattern: cfg.rollingDatePattern,
-        dirname: path.join(__dirname, cfg.logsDirectory),
+        dirname: path.join(cfg.root, cfg.logsDirectory),
         filename: cfg.appLogName,
         maxsize: cfg.logFileMaxSize
       }),
@@ -33,5 +39,7 @@ module.exports = (function() {
   });
   global.winston = logger;
 
-  return cfg;
+  //##############################################
+
+  return _.merge(cfg, require("./"+process.env.NODE_ENV+'.js') || {});
 })();
