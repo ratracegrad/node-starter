@@ -1,16 +1,15 @@
+# EditorConfig helps developers define and maintain
+# consistent syntax formatting between different editors/IDEs
+# editorconfig.org
+
 root = true
 
-# Forces all files to end in new-line
 [*]
+charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-charset = utf-8
 
-[*.html]
-indent_style = tab
-indent_size = 4
-
-[*.{js,sass,scss,css}]
+[*.js]
 indent_style = space
 indent_size = 2
