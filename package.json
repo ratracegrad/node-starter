@@ -4,7 +4,7 @@
   "description": "A starter template for gigsters making NodeJS apps",
   "main": "server/index.js",
   "scripts": {
-    "start": "nodemon server/app.js",
+    "start": "node --harmony server/app.js",
     "test": "echo \"No Tests Specified\""
   },
   "repository": {
@@ -23,8 +23,8 @@
   "dependencies": {
     "cors": "^2.7.1",
     "ejs": "^2.3.3",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "winston": "^1.0.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
