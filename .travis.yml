@@ -1,14 +1,5 @@
 language: node_js
-sudo: false
+sudo: true
 node_js:
   - '0.10'
   - '0.12'
-cache:
-  directories:
-    - node_modules
-    - assets/vendor
-install:
-  # Check the size of caches
-  - du -sh ./node_modules ./assets/vendor || true
-  - npm install -g bower && npm install
-  - bower install

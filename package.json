@@ -2,9 +2,9 @@
   "name": "node-starter",
   "version": "1.0.0",
   "description": "A starter template for gigsters making NodeJS apps",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server/app.js",
     "test": "echo \"No Tests Specified\""
   },
   "repository": {
