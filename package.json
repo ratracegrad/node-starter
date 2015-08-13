@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node --harmony server/app.js",
-    "test": "echo \"No Tests Specified\""
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,18 @@
     "lodash": "^3.10.1",
     "winston": "^1.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.4",
+    "grunt-express-server": "^0.5.1",
+    "grunt-jsonlint": "^1.0.4",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-newer": "^1.1.1",
+    "grunt-node-inspector": "^0.2.0",
+    "grunt-nodemon": "^0.4.0",
+    "grunt-open": "^0.2.3",
+    "mocha": "^2.2.5"
+  }
 }
