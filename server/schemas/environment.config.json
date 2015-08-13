@@ -1,0 +1,90 @@
+{
+  "type": "object",
+  "properties": {
+    "logging": {
+      "type": "object",
+      "properties": {
+        "exitOnError": {
+          "type": "boolean"
+        },
+        "console": {
+          "level": {
+            "type": "string"
+          }
+        },
+        "file": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "type": "string"
+            },
+            "appLogName": {
+              "type": "string"
+            },
+            "logFileMaxSize": {
+              "type": "integer"
+            },
+            "logsDirectory": {
+              "type": "string"
+            },
+            "rollingDatePattern": {
+              "type": "string"
+            }
+          }
+        },
+        "use": {
+          "type": "object",
+          "properties": {
+            "console": {
+              "type": "boolean"
+            },
+            "file": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "paths": {
+      "type": "object",
+      "properties": {
+        "root": {
+          "type": "string"
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "secrets": {
+          "type": "object"
+        }
+      }
+    },
+    "server": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "integer"
+        },
+        "env": {
+          "type": "string"
+        }
+      }
+    },
+    "views": {
+      "type": "object",
+      "properties": {
+        "viewPath": {
+          "type": "string"
+        },
+        "viewExt": {
+          "type": "string"
+        },
+        "engine": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

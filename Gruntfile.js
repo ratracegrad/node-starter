@@ -41,18 +41,17 @@ module.exports = function (grunt) {
 
     express: {
       options: {
-        port: process.env.PORT || 9000
+        port: 3001
       },
       dev: {
         options: {
-          script: 'server/app.js',
+          script: 'server/web.js',
           debug: true
         }
       },
       prod: {
         options: {
-          script: 'server/app.js',
-          node_env: 'production'
+          script: 'server/web.js'
         }
       }
     },
