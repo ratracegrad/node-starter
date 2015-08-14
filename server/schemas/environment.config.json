@@ -2,47 +2,26 @@
   "type": "object",
   "properties": {
     "logging": {
-      "type": "object",
-      "properties": {
-        "exitOnError": {
-          "type": "boolean"
-        },
-        "console": {
-          "level": {
-            "type": "string"
-          }
-        },
-        "file": {
-          "type": "object",
-          "properties": {
-            "level": {
-              "type": "string"
-            },
-            "appLogName": {
-              "type": "string"
-            },
-            "logFileMaxSize": {
-              "type": "integer"
-            },
-            "logsDirectory": {
-              "type": "string"
-            },
-            "rollingDatePattern": {
-              "type": "string"
-            }
-          }
-        },
-        "use": {
-          "type": "object",
-          "properties": {
-            "console": {
-              "type": "boolean"
-            },
-            "file": {
-              "type": "boolean"
-            }
-          }
-        }
+      "exitOnError": "boolean",
+      "use": {
+        "console": "boolean",
+        "file": "boolean"
+      },
+      "console": {
+        "level": "string"
+      },
+      "file": {
+        "level": "string",
+        "appLogName": "string",
+        "logFileMaxSize": "integer",
+        "logsDirectory": "string",
+        "rollingDatePattern": "string"
+      },
+      "levels": {
+        "debug": 0,
+        "info": 1,
+        "warn": 2,
+        "error": 3
       }
     },
     "paths": {
@@ -75,10 +54,10 @@
     "views": {
       "type": "object",
       "properties": {
-        "viewPath": {
+        "path": {
           "type": "string"
         },
-        "viewExt": {
+        "ext": {
           "type": "string"
         },
         "engine": {
