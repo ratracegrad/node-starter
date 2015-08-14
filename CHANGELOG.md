@@ -7,6 +7,7 @@
     - Winston set to global for Logging into ./server/logs and to the console
     - Added many dotfiles for IDE/Console mastery
 	- Grunt Taskfile for Build Automation
+	- Simple Hello World provided at root path (/)
 
 #### __Planned__
 	- Include JSDoc
