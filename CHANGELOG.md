@@ -6,3 +6,7 @@
     - Lots of Configurations added to manage ENV setups for DEV, QA, PROD
     - Winston set to global for Logging into ./server/logs and to the console
     - Added many dotfiles for IDE/Console mastery
+	- Grunt Taskfile for Build Automation
+
+#### __Planned__
+	- Include JSDoc

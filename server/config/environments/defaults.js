@@ -1,6 +1,6 @@
 'use strict';
 
-var path = require('path'l);
+var path = require('path');
 var ejs = require('ejs');
 
 module.exports = {
@@ -38,8 +38,8 @@ module.exports = {
     env: process.env.NODE_ENV || "development"
   },
   views: {
-    viewPath: path.join('server', 'views'),
-    viewExt: 'html',
+    path: path.join('server', 'views'),
+    ext: 'html',
     engine: ejs.renderFile
   }
 };

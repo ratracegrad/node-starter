@@ -1,12 +1,14 @@
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var methodOverride = require('method-override');
-var cors = require('cors');
-var compression = require('compression');
-var errorhandler = require('errorhandler');
+'use strict';
 
-module.exports = function (app) {
-  var env = app.get('env');
+var bodyParser = require('body-parser');
+var compression = require('compression');
+var cookieParser = require('cookie-parser');
+var cors = require('cors');
+var errorhandler = require('errorhandler');
+var methodOverride = require('method-override');
+
+module.exports = function(app) {
+  var env = app.locals.config.server.env;
 
   app.use(cors());
   app.use(cookieParser());

@@ -1,12 +1,14 @@
+'use strict';
+
 var path = require('path');
 var winston = require('winston');
 
-module.exports = function (app) {
+module.exports = function(app) {
 
   var config = app.locals.config;
   var transports = [];
 
-  if (config.logging.use.console === true) {
+  if(config.logging.use.console === true) {
     transports.push(new(winston.transports.Console)({
       level: config.logging.console.level,
       timestamp: function () {
