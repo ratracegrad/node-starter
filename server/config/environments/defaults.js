@@ -13,7 +13,7 @@ module.exports = {
     },
     file: {
       level: 'warn',
-      appLogName: 'WinstonLog.log',
+      appLogName: 'Application.log',
       logFileMaxSize: 20000,
       logsDirectory: 'logs',
       rollingDatePattern: '.yyyy-MM-dd'

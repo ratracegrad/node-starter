@@ -1,6 +1,6 @@
 var _ = require('lodash');
 
-module.exports = function (app) {
+module.exports = function(app) {
   'use strict';
 
   var env = app.get('env');
