@@ -8,7 +8,7 @@ module.exports = function(app) {
   var ext = app.locals.config.views.ext;
 
   app.get("/", function (req, res) {
-    logger.warn('No root route defined');
+    logger.info('Returning index.html...');
     res.sendFile(path.join(views, 'index.'+ext));
   });
 };
