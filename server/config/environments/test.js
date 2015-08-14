@@ -1,5 +1,15 @@
 'use strict';
 
+var path = require('path');
+
+// Test Settings
 module.exports = {
-  // Test Settings
+  logging: {
+    file: {
+      logsDirectory: path.join('logs', 'QA')
+    }
+  },
+  server: {
+    env: "test"
+  }
 };

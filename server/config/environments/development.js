@@ -1,5 +1,12 @@
 'use strict';
 
+var path = require('path');
+
+// Development Settings
 module.exports = {
-  // Development Settings
+  logging: {
+    file: {
+      logsDirectory: path.join('logs', 'DEV')
+    }
+  }
 };

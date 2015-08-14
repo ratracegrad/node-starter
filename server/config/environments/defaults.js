@@ -1,4 +1,6 @@
-var path = require('path');
+'use strict';
+
+var path = require('path'l);
 var ejs = require('ejs');
 
 module.exports = {
@@ -32,7 +34,7 @@ module.exports = {
     secrets: {}
   },
   server: {
-    port: process.env.PORT || 3001,
+    port: process.env.PORT || 8080,
     env: process.env.NODE_ENV || "development"
   },
   views: {
