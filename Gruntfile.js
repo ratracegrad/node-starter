@@ -11,7 +11,7 @@ module.exports = function (grunt) {
       },
       files: [
         'Gruntfile.js',
-        'server/**/*.js',
+        'lib/**/*.js',
         'tests/**/*.js'
       ]
     },
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
       release: {
         expand: true,
         src: [
-          'server/**/*.json'
+          'lib/**/*.json'
         ]
       }
     },
@@ -43,22 +43,11 @@ module.exports = function (grunt) {
       options: {
         port: 3001
       },
-      dev: {
+      sample: {
         options: {
-          script: 'server/web.js',
+          script: 'example/web.js',
           debug: true
         }
-      },
-      prod: {
-        options: {
-          script: 'server/web.js'
-        }
-      }
-    },
-
-    open: {
-      server: {
-        url: 'http://localhost:<%= express.options.port %>'
       }
     },
 
@@ -72,7 +61,7 @@ module.exports = function (grunt) {
 
     nodemon: {
       debug: {
-        script: 'server.js',
+        script: 'example/web.js',
         options: {
           nodeArgs: ['--debug-brk'],
           env: {
@@ -97,9 +86,11 @@ module.exports = function (grunt) {
     watch: {
       express: {
         files: [
-          'server/**/*.js'
+          'example/web.js',
+          'example/nodestarter-config.js',
+          'lib/**/*.js'
         ],
-        tasks: ['newer:jshint:server', 'express:dev'],
+        tasks: ['newer:jshint', 'newer:jsonlint', 'express:sample'],
         options: {
           livereload: false,
           nospawn: true //Without this option specified express won't be reloaded
@@ -117,11 +108,10 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('serve', function (target) {
+  grunt.registerTask('run-sample', function (target) {
     grunt.task.run([
       'env:development',
-      'express:dev',
-      'open',
+      'express:sample',
       'watch'
     ]);
   });
@@ -135,7 +125,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'test',
-    'serve'
+    'run-sample'
   ]);
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -147,6 +137,4 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-node-inspector');
-  grunt.loadNpmTasks('grunt-open');
-
 };

@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties":
+  {
+    "cookies":
+    {
+      "type": "object",
+      "properties":
+      {
+        "enabled":
+        {
+          "type": "boolean"
+        }
+      }
+    },
+    "compression":
+    {
+      "type": "object",
+      "properties":
+      {
+        "enabled":
+        {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

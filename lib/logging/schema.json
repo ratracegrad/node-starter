@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "exitOnError": {
+      "type": ["undefined", "boolean"]
+    },
+    "console": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": ["undefined", "boolean"]
+        },
+        "level": {
+          "type": ["undefined", "string"]
+        }
+      }
+    },
+    "file": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": ["undefined", "boolean"]
+        },
+        "level": {
+          "type": ["undefined", "string"]
+        },
+        "appLogName": {
+          "type": "string"
+        },
+        "logFileMaxSize": {
+          "type": "integer"
+        },
+        "logsDirectory": {
+          "type": "string"
+        },
+        "rollingDatePattern": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "appLogName",
+        "logsDirectory"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

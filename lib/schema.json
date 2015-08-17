@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties":
+  {
+    "logging":
+    {
+      "type": ["undefined", "object"]
+    },
+    "routing":
+    {
+      "type": ["undefined", "object"]
+    },
+    "views":
+    {
+      "type": ["undefined", "object"]
+    }
+  },
+  "additionalProperties": false
+}

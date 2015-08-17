@@ -1,0 +1,32 @@
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:31:49.401Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:31:49.403Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:31:54.975Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:31:54.977Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:33:37.902Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:33:37.904Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:33:39.604Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:34:36.604Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:34:36.607Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:35:52.417Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:35:52.420Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:35:55.347Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:36:06.801Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:36:08.769Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:36:09.173Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:36:09.423Z"}
+{"level":"warn","message":"No root route defined","timestamp":"2015-08-17T13:36:09.646Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:47:19.629Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:47:19.631Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:50:23.277Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:50:23.296Z"}
+{"level":"warn","message":"This is just a sample app.","timestamp":"2015-08-17T13:50:26.052Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:50:42.093Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:50:42.095Z"}
+{"level":"warn","message":"This is just a sample app.","timestamp":"2015-08-17T13:50:43.232Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:51:55.019Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:51:55.023Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:55:52.821Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:55:52.823Z"}
+{"level":"debug","message":"Web server listening on port 3001","timestamp":"2015-08-17T13:55:56.045Z"}
+{"level":"debug","message":"Web server started","timestamp":"2015-08-17T13:55:56.047Z"}
+{"level":"warn","message":"This is just a sample app.","timestamp":"2015-08-17T13:55:57.445Z"}

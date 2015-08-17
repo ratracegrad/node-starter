@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "viewPath": {
+      "type": "string"
+    },
+    "viewExt": {
+      "type": "string"
+    },
+    "engine": {
+      "type": ["object", "function"]
+    }
+  }
+}
