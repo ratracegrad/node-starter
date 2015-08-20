@@ -1,2 +1,6 @@
+# Ignore basic npm files/folders
+npm-debug.log
 node_modules/
-server/logs/
+
+# Application Specific
+

@@ -1,0 +1,16 @@
+npm-debug.log
+node_modules/
+
+example/
+
+.editorconfig
+.gitattributes
+.gitignore
+.jshintignore
+.jshintrc
+.travis.yml
+
+CHANGELOG.md
+CONTRIBUTING.md
+
+Gruntfile.js
