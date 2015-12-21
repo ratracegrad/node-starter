@@ -2,7 +2,7 @@
 
 // Contains various globs + options for running gulp tasks
 
-let cfg = {};
+const cfg = {};
 
 /*===================================
 =            DIRECTORIES            =
@@ -38,6 +38,11 @@ cfg.files.webWorkers = `./worker/${cfg.globs.allJS}`;
 ===============================*/
 
 cfg.options = {};
+cfg.options.babel = {
+  presets:  [ 'es2015' ],
+  comments: true
+};
+cfg.options.jsdoc = './documentation';
 
 /*=====  End of OPTIONS  ======*/
 

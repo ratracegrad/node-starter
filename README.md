@@ -4,10 +4,6 @@ A complete NodeJS starter template. This template is designed to give any NodeJS
 
 Please refer to the [CONTRIBUTING.md](https://github.com/gigster-eng/node-starter/blob/master/CONTRIBUTING.md) doc for any questions, concerns, or suggestions
 
-Below is a list of all the supported features. Refer to the [Wiki](https://github.com/gigster-eng/node-starter/wiki) for more information on how to use them along with configuration options:
-
-1.
-
 #### Getting Started
 
 1. Install Modules
@@ -33,3 +29,36 @@ cp .env.example .env
 ```sh
 npm start
 ```
+
+Below is a list of all the supported features. Refer to the [Wiki](https://github.com/gigster-eng/node-starter/wiki) for more information on how to use them along with configuration options:
+
+#### Middleware Tools
+1. Application Logging using Winston
+2. CORS Security Headers
+3. PassportJS for Session Management
+4. Cookie Modules for Session Management using Cookies
+5. Reading Cookies in the Request
+6. HTTP Method Overriding for customer headers
+7. Body Parsing to provide all content as JSON in `req` object
+
+#### Server Side Tools
+1. Sample Web Filter
+2. Sample Response Handler with HTTP Status Codes
+3. Basic Folder Structure to support easy Table Management for Knex.js
+4. Configuration Management for multiple environments (i.e. Development/Staging/Production)
+5. KnexJS for SQL query building + connecting to relational DBs
+6. Foreman for managing multiple NodeJS processes
+
+#### Code Quality Tools
+1. Basic CodeClimate yaml file
+2. ESLint Config File to manage code consistency
+3. Editor Config File to enforce code indentation
+4. Git dotfiles to better manage git history
+5. Apiary for API Documentation tracking
+
+#### Additional
+1. Basic CRON Job template
+2. Gulp for task management + additional tasks for:
+	a. Linting the project
+	b. Detecting vulnerable modules in `package.json`
+	c. Building JSDoc library

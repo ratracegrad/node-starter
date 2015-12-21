@@ -5,8 +5,8 @@ const plugins = require('gulp-load-plugins')();
 
 const cfg = require('./_config');
 
-gulp.task('lint', () => {
+gulp.task('jsdoc', () => {
   return gulp.src([ cfg.files.nodeServer, cfg.files.webWorkers ])
-    .pipe(plugins.eslint())
-    .pipe(plugins.eslint.format());
+    .pipe(plugins.babel(cfg.options.babel))
+    .pipe(plugins.jsdoc(cfg.options.jsdoc));
 });
