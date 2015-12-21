@@ -11,3 +11,7 @@
 
 #### __Planned__
 	- Include JSDoc
+
+# 1.0.0
+> Rebuilt the entire application off of an existing Gigster project with lots of good practices
+> See WIKI for more info

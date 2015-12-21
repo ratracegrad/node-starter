@@ -4,13 +4,14 @@
 =            MODULES            =
 ===============================*/
 
-const express = require('express');
+const handles = require('../../components/handles');
 
 /*=====  End of MODULES  ======*/
 
 
 module.exports = app => {
-  const config = app.locals.config;
-
-  // Setup any express related configurations here (i.e. Views Engine)
+  return (req, res, next) => {
+    // Perform OPs on the request. Call next() to continue the chain
+    return next();
+  };
 };

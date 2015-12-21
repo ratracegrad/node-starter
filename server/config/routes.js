@@ -1,14 +1,9 @@
 'use strict';
 
-module.exports = function(app) {
+module.exports = app => {
+  /*----------  ROUTERS  ----------*/
+  const rootRoutes = require('../routes/root')(app);
 
-  var ext = app.locals.config.views.ext;
-  var logger = app.locals.logger;
-  var path = require('path');
-  var views = app.locals.config.views.path;
-
-  app.get("/", function (req, res) {
-    logger.info('Returning index.html...');
-    res.sendFile(path.join(views, 'index.'+ext));
-  });
+  /*----------  MAP ROUTES TO PARENT URLS  ----------*/
+  app.use('/', rootRoutes);
 };
