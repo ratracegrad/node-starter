@@ -51,10 +51,11 @@ Below is a list of all the supported features. Refer to the [Wiki](https://githu
 
 #### Code Quality Tools
 1. Basic CodeClimate yaml file
-2. ESLint Config File to manage code consistency
-3. Editor Config File to enforce code indentation
-4. Git dotfiles to better manage git history
-5. Apiary for API Documentation tracking
+2. Basic CircleCI yaml file
+3. ESLint Config File to manage code consistency
+4. Editor Config File to enforce code indentation
+5. Git dotfiles to better manage git history
+6. Apiary for API Documentation tracking
 
 #### Additional
 1. Basic CRON Job template
