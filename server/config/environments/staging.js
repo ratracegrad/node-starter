@@ -1,6 +1,6 @@
 'use strict';
 
-// Production Settings
+// Staging Settings
 module.exports = {
   logging: {
     exitOnError: false,
